@@ -14,6 +14,7 @@ $app-direction: ltr;
 
 @import "ionic.globals";
 
+@import './gradient-mixins';
 
 // Shared Variables
 // --------------------------------------------------
@@ -34,11 +35,11 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:    #bed661,
+  secondary:  #89e894,
+  danger:     #02c39a,
+  light:      #78d5e3,
+  dark:       #028090
 );
 
 

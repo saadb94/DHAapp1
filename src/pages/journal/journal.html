@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Journal Entry
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 text-center>
+    How was your day?
+  </h3>
+  <hr>
+  <ion-item>
+    <ion-textarea [(ngModel)]="text1" autosize text-center></ion-textarea>
+  </ion-item>
+
+  <hr>
+  <h4 text-center>Mark your mood on the scale</h4>
+
+  <!-- <ion-item text-center> -->
+  <!-- <ion-label floating>I feel content.</ion-label>
+    <ion-range min="0" max="1000" step="100" snaps="true" color="secondary" [(ngModel)]="mood_range"></ion-range> -->
+  <img src='../../assets/imgs/emotionwheel.png'>
+
+  <ion-card text-wrap>
+    <ion-label autosize text-center>{{themood}}</ion-label>
+    <!-- </ion-item> -->
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <button ion-button (click)="sendPostReqA()" block>Post Data</button>
+  <button ion-button (click)="viewAnalysis()" block>View Analysis</button>
+  <!-- </ion-item> -->
+  <!-- <ion-item> -->
+  <button ion-button (click)="logToneA()" block>View Recommendations</button>
+  <!-- </ion-item> -->
+</ion-footer>

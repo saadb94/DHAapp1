@@ -1,18 +1,50 @@
-<ion-header>
+<ion-header text-center>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Mindspire</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <div text-center>
+    <!-- dimensions set using input properties -->
+    <img width="250px" height="250px" src='../../assets/imgs/appicon1.png'>
+  </div>
+  <hr>
+  <div text-center>
+    <h3>
+      Please enter your age and gender
+    </h3>
+  </div>
+  <hr>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Age</ion-label>
+      <ion-input placeholder="How old are you?" type="number" [(ngModel)]="age"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+        <ion-option value="o">Other</ion-option>
+        <ion-option value="n">Do not wish to specify</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label>Swag level</ion-label>
+      <ion-range min="0" max="100" step="10" snaps="true" color="secondary" [(ngModel)]="singleValue4"></ion-range>
+    </ion-item> -->
+
+  </ion-list>
 </ion-content>
+
+<ion-footer padding>
+  <button ion-button (click)="onsubmit()" block>Lets go!</button>
+</ion-footer>

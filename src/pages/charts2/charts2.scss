@@ -1,0 +1,8 @@
+page-charts2 {
+    ion-content {
+        @include linear-gradient(right,$test1);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+}

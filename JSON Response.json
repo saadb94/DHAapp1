@@ -1,0 +1,45 @@
+{
+  "document_tone": {
+    "tones": [
+      {
+        "score": 0.88755,
+        "tone_id": "fear",
+        "tone_name": "Fear"
+      },
+      {
+        "score": 0.952443,
+        "tone_id": "tentative",
+        "tone_name": "Tentative"
+      }
+    ]
+  },
+  "sentences_tone": [
+    {
+      "sentence_id": 0,
+      "text": "hello this is saad and I love myself so much.",
+      "tones": [
+        {
+          "score": 0.889618,
+          "tone_id": "joy",
+          "tone_name": "Joy"
+        }
+      ]
+    },
+    {
+      "sentence_id": 1,
+      "text": "SOmetimes I get scared",
+      "tones": [
+        {
+          "score": 0.918914,
+          "tone_id": "fear",
+          "tone_name": "Fear"
+        },
+        {
+          "score": 0.984352,
+          "tone_id": "tentative",
+          "tone_name": "Tentative"
+        }
+      ]
+    }
+  ]
+}
